@@ -14,4 +14,4 @@ void show_file(string filename);
 void check(string filename);
 void len(string filename);
 void bin2stream(string filename);
-void debag(FileManager& manager, bool flag);
+void debug(FileManager& manager, bool flag);

@@ -90,7 +90,7 @@ void bin2stream(string filename)
 	file.close();
 }
 
-void debag(FileManager& manager, bool flag)
+void debug(FileManager& manager, bool flag)
 {
 	int count = 6;
 	if (!flag)
