@@ -15,5 +15,4 @@ public:
 	unsigned int get() const;	// Возвращает последнее число
 	int getOder() const;
 	int operator[](int i) const;
-	//unsigned int* sum() const;		// Возвращает массив с суммами
 };

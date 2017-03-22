@@ -139,7 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="debag.h" />
+    <ClInclude Include="testsHelper.h" />
     <ClInclude Include="Fibonacci.h" />
     <ClInclude Include="FileManager.h" />
     <ClInclude Include="polyPhaseMerge.h" />
@@ -149,6 +149,7 @@
     <ClCompile Include="FileManager.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="polyPhaseMerge.cpp" />
+    <ClCompile Include="testsHelper.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -22,12 +22,12 @@ FileManager::~FileManager()
 	for (int i = 0; i < inCount; i++)
 	{
 		input[i].file.close();
-		//remove(input[i].name.c_str());
+		remove(input[i].name.c_str());
 	}
 	for (int i = 0; i < outCount; i++)
 	{
 		output[i].file.close();
-		//remove(output[i].name.c_str());
+		remove(output[i].name.c_str());
 	}
 }
 
@@ -55,13 +55,7 @@ void FileManager::swap(int inIndex, int outIndex)
 	output[outIndex].file.close();
 	input[inIndex].file.open(input[inIndex].name, std::ios::out | std::ios::binary);
 	output[outIndex].file.open(output[outIndex].name, std::ios::in | std::ios::binary);
-
 	input[inIndex].swap(output[outIndex]);
-
-	//input[inIndex].numSeries = output[outIndex].numSeries;
-	//input[inIndex].idleSeries = output[outIndex].idleSeries;
-	//output[outIndex].numSeries = 0;
-	//output[outIndex].idleSeries = 0;
 	//std::cout << std::endl << "SWAP " << inIndex << std::endl;
 }
 

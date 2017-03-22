@@ -6,6 +6,8 @@
 #include "FileManager.h"
 #include "Fibonacci.h"
 
+/*¬нешн€€ сортировка многофазным сли€нием*/
+
 void polyPhaseMerge(std::string filename);
-int polyPhaseMergeHelper(FileManager& manager);
+void merge(FileManager& manager);
 void firstDistrib(std::fstream& file, FileManager& manager);
