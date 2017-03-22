@@ -26,14 +26,11 @@ void polyPhaseMerge(std::string filename)
 	}
 	manager.input[0].idleSeries += min;
 
-	//debag(manager, 0);	// Вывод информации для проверки
-
 	manager.swap(); // Меняем файлы
-	polyPhaseMergeHelper(manager);
-	//debag(manager, 1);	// Вывод информации для проверки
+	polyPhaseMergeHelper(manager); // Сортируем
 
 	/* Записываем результирующий файл файл*/
-	manager.swap(); // Меняем файлы
+	manager.swap(); 
 	std::fstream result;
 	result.open(filename.insert(filename.length() - 4, "(sorted)"), std::ios::out); //create result file
 	int len = manager.read(0);
